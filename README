@@ -1,0 +1,9 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4390
+
+This is a syntax highlighter for filetype 'ferm',  a frontend for iptables.
+ferm = "For Easy Rule Making"
+
+For latest developments, any mods, pull requests, etc, see:
+    https://github.com/cometsong/ferm.vim
+
+
