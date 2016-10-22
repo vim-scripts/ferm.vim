@@ -151,14 +151,14 @@ syntax keyword fermModuleType
     \ address-mask-reply
 
 " TODO: check ferm "$variable" & "&function" character matches
-syntax match fermVariable "$[_A-Za-z0-9]+"
-syntax keyword fermVarDefine @def 
+syntax match fermVariable "$[_A-Za-z0-9]\+"
+syntax keyword fermVarDefine def
 
 syntax keyword fermFunction @if @else @include @hook
     \ @eq @ne @not @resolve @cat @substr @length
     \ @basename @dirname @ipfilter
 
-syntax keyword fermUserFunction "&[_A-Za-z0-9]+" 
+syntax match fermUserFunction "&[_A-Za-z0-9]\+"
 
 syntax region fermString start=+"+ skip=+\\"+ end=+"+
 syntax region fermString start=+'+ skip=+\\'+ end=+'+
